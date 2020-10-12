@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="503.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="161.0" layoutY="14.0" prefHeight="65.0" prefWidth="484.0" text="Google word search" textFill="#970d0d">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="90.0" layoutY="97.0" prefHeight="51.0" prefWidth="484.0" promptText="enter any word">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="button" layoutX="602.0" layoutY="100.0" mnemonicParsing="false" onAction="#summit" prefHeight="45.0" prefWidth="114.0" text="Search" textFill="#1c0a8c">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="30.0" layoutY="157.0" prefHeight="312.0" prefWidth="686.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="image" fitHeight="51.0" fitWidth="49.0" layoutX="31.0" layoutY="100.0" onMousePressed="#clickMouse" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ttt.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pronoun" fitHeight="21.0" fitWidth="49.0" layoutX="34.0" layoutY="164.0" onMousePressed="#mousePress" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/speaker.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
